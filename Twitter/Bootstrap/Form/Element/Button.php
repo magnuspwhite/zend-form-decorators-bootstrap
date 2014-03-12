@@ -49,7 +49,7 @@ class Twitter_Bootstrap_Form_Element_Button extends Twitter_Bootstrap_Form_Eleme
             $this->_icon = 'icon-' . $options['icon'];
 
             if (isset($options['whiteIcon']) && true === $options['whiteIcon']) {
-                $this->_icon .= ' icon-white';
+                $this->_icon .= ' text-white';
                 unset($options['whiteIcon']);
             }
 
@@ -73,7 +73,7 @@ class Twitter_Bootstrap_Form_Element_Button extends Twitter_Bootstrap_Form_Eleme
      */
     private function _renderIcon()
     {
-        return !empty($this->_icon) ? '<i class="' . $this->_icon . '"></i>' : '';
+        return !empty($this->_icon) ? '<span class="' . $this->_icon . '"></span>' : '';
     }
 
     /**
