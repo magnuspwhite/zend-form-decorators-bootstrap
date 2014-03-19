@@ -9,7 +9,7 @@
  */
 
 /**
- * Sets the class to its appropiate size (span1, span2, ...)
+ * Sets the class to its appropiate size (col-md-1, col-md-2, ...)
  *
  * @category Forms
  * @package Twitter_Bootstrap_Form
@@ -19,7 +19,7 @@
 class Twitter_Bootstrap_Form_Decorator_FieldSize extends Zend_Form_Decorator_Abstract
 {
     /**
-     * @param string $content
+     * @param  string $content
      * @return mixed
      */
     public function render($content)
